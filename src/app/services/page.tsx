@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link"; 
 import Navbar from "@/components/layout/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -237,9 +238,13 @@ export default function ServicesDeepDive() {
               <p className="text-slate-500 mb-10 max-w-sm mx-auto font-light">
                 Our solutions are tailor-made for your specific environment. Let's engineer your growth today.
               </p>
-              <button className="bg-mfs-navy text-white px-12 py-5 text-[10px] font-black uppercase tracking-[0.4em] hover:bg-mfs-gold hover:text-mfs-navy transition-all">
+              
+              <Link 
+                href="/contact" 
+                className="inline-block bg-mfs-navy text-white px-12 py-5 text-[10px] font-black uppercase tracking-[0.4em] hover:bg-mfs-gold hover:text-mfs-navy transition-all rounded-sm shadow-xl"
+              >
                 Initiate Consultation
-              </button>
+              </Link>
            </motion.div>
         </div>
       </section>
